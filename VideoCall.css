@@ -1,0 +1,432 @@
+
+body{
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    background-repeat: no-repeat;
+}
+
+.top1 {
+			width: 100%;
+			height: 10%;
+			background: #091C36;
+			position: absolute;
+			top: 0;
+			left: 0;
+			right: 0;
+			border-bottom: 2px solid white;
+			z-index: 400000000;
+			position: fixed;
+		}
+
+		.halo {
+	color: #FFF;
+font-family: Arial;
+font-size: 150%;
+font-style: normal;
+font-weight: ;
+line-height: normal;
+margin-left: 20px;
+margin-top: 16px;
+}
+
+.logounity {
+			width: 165px;
+    height: auto;
+    position: absolute;
+    top: 0px;
+    right: 1%;
+		}
+
+
+
+.infoshare{
+	margin-top: 0%;
+	width: 652px;
+height: 44px;
+flex-shrink: 0;
+border-radius: 81px;
+background: #D9D9D9;
+position: absolute;
+margin-left: 20%;
+/*filter: drop-shadow(10px 20px 20px rgba(0, 0, 0, 10));*/
+font-family: arial;
+font-size: 80%;
+ display: flex;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    z-index: 10000000000000000;
+}
+
+
+
+
+
+/*localvideo*/
+/*.kotak2 {
+	width: 300px;
+height: 200px;
+flex-shrink: 0;
+position: absolute;
+bottom: 0px;
+right: 7px;
+background-color: whitesmoke;
+margin-left: 50px;
+border-radius: 5px;
+}
+*/
+
+
+
+#salinurl{
+	position: fixed;
+	z-index: 999999999999999;
+	width: 140px;
+	height: 44px;
+	margin-top: 0px;
+	right: 270px;
+	border-radius: 81px;
+	border: none; /* Added */
+  outline: none; /* Added */
+	background: skyblue;
+/*filter: drop-shadow(10px 20px 20px rgba(0, 0, 0, 10));*/
+	font-family: arial;
+ display: flex;
+ align-items: center;
+ justify-content: center;
+ cursor: pointer;
+}
+
+#salinurl:hover{
+	background-color: #0056b3;
+}
+
+.akhiri{
+	width: 120px;
+height: 60px;
+flex-shrink: 0;
+	border-radius: 32px;
+background: #C30101;
+position: absolute;
+top: 530px;
+right: 45%;
+background-image: url("reject.png");
+background-repeat: no-repeat;
+background-position: center;
+filter: drop-shadow(6px 9px 10px rgba(0, 0, 0, 0.25));
+z-index: 100000;
+cursor: pointer;
+}
+
+.akhiri:hover{
+	background-color: darkred;
+	filter: drop-shadow(6px 9px 10px rgba(0, 0, 0, 10));
+}
+
+.footer{
+    background-color: #091C36;
+    position: absolute;
+    width: 100%;
+    height: 120px;
+    bottom: -200px;
+			left: 0;
+			right: 0;
+   }
+
+   .ffb{
+    color: #FFF;
+font-family: Arial;
+font-size: 20px;
+font-style: normal;
+font-weight: 400px;
+line-height: normal;
+margin-left: 37.5%;
+margin-top: 4%;
+transition: color 0.3s;
+   }
+  
+
+   .fig{
+     color: #FFF;
+font-family: Arial;
+font-size: 20px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+margin-left: 57.5%;
+margin-top: -25px;
+}
+
+
+   a {
+    color: white; /* Warna tautan normal */
+    text-decoration: none; /* Hilangkan garis bawah tautan */
+  }
+
+  /* Tautan yang sudah dikunjungi */
+  a:visited {
+    color: white; /* Warna tautan setelah dikunjungi */
+  }
+
+
+.video-container {
+  z-index: 9999;
+  justify-content: space-between;
+  display: flex;
+  position:absolute;
+  height: 100%;
+  width: 100%;
+  left: 0;
+  right: 0;
+}
+
+
+#localVideo {
+z-index: 2;
+  width: 300px;
+height: 200px;
+flex-shrink: 0;
+position: absolute;
+bottom :0px;
+right: 7px;
+margin-left: 50px;
+border-radius: 10px;
+}
+
+#remoteVideo {
+  z-index: 1;
+  width: 100%;
+	height: 90%;
+	flex-shrink: 0;
+	position: absolute;
+	margin-top: 40px;
+	margin-left: 0%;
+	 /* width: 400px;
+	height: 295px;
+	margin-top: 180px;
+	margin-left: 140px;*/}
+
+.unitygif {
+	position: absolute;
+    display: flex;
+    left: 33%;
+    height: 100vh;
+}
+
+.gambar-animasi {
+    width: 500px; /* Sesuaikan dengan ukuran gambar Anda */
+    height: 500px;
+    animation: animasi-gambar 2s ease-in-out infinite alternate;
+    z-index: 9999;
+    margin-top: 70px;
+    position: absolute;
+}
+
+@keyframes animasi-gambar {
+    0% {
+        transform: scale(1);
+    }
+    100% {
+        transform: scale(1.2);
+    }
+}
+
+
+
+@media (max-width: 1180px) {
+	.top1 {
+			width: 100%;
+			height: 8%;
+			background: #091C36;
+			position: absolute;
+			top: 0;
+			left: 0;
+			right: 0;
+			border-bottom: 1% solid white;
+			z-index: 400000000;
+			position: fixed;
+		}
+
+		.halo {
+			opacity: 0;
+		}
+
+.logounity {
+		width: 170px;
+    height: auto;
+    position: absolute;
+    top: 8px;
+    right: 1%;
+		}
+
+
+.infoshare{
+	margin-top: 1%;
+	width: 50%;
+height: 4.5%;
+flex-shrink: 0;
+border-radius: 81px;
+background: #D9D9D9;
+position: absolute;
+margin-left: 0%;
+/*filter: drop-shadow(10px 20px 20px rgba(0, 0, 0, 10));*/
+font-family: arial;
+font-size: 75%;
+ display: flex;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    z-index: 10000000000000000;
+}
+
+#salinurl{
+	position: fixed;
+	z-index: 999999999999999;
+	width: 10%;
+	height: 4.5%;
+	margin-top: 1%;
+	right: 37%;
+	border-radius: 81px;
+	border: none; /* Added */
+  outline: none; /* Added */
+	background: skyblue;
+/*filter: drop-shadow(10px 20px 20px rgba(0, 0, 0, 10));*/
+	font-family: arial;
+ display: flex;
+ align-items: center;
+ justify-content: center;
+ cursor: pointer;
+}
+
+
+
+
+
+#salinurl:hover{
+	background-color: #0056b3;
+}
+
+.akhiri{
+	width: 30%;
+height: 10%;
+flex-shrink: 0;
+border-radius: 32px;
+background: #C30101;
+position: absolute;
+left: 65%;
+background-color: red;
+background-image: url("reject.png");
+background-repeat: no-repeat;
+background-position: center;
+filter: drop-shadow(6px 9px 10px rgba(0, 0, 0, 0.25));
+z-index: 10000000000;
+cursor: pointer;
+margin-top: 67%;
+}
+
+.akhiri:hover{
+	background-color: darkred;
+	filter: drop-shadow(6px 9px 10px rgba(0, 0, 0, 10));
+}
+
+.footer{
+    background-color: #091C36;
+    width: 150%;
+    height: 10%;
+		overflow: hidden;
+			margin-bottom: -20%;
+			right: 0;
+   }
+
+   .ffb{
+    color: #FFF;
+font-family: Arial;
+font-size: 20px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+margin-left: 35%;
+margin-top: 4%;
+transition: color 0.3s;
+   }
+   .ffb:hover {
+    color: gray;
+   }
+
+   .fig{
+     ccolor: white;
+font-family: Arial;
+font-size: 20px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+margin-left: 60%;
+margin-top: -23px;
+}
+
+
+   a {
+    color: white; /* Warna tautan normal */
+    text-decoration: none; /* Hilangkan garis bawah tautan */
+  }
+
+  /* Tautan yang sudah dikunjungi */
+  a:visited {
+    color: white; /* Warna tautan setelah dikunjungi */
+  }
+
+
+
+
+#localVideo {
+  z-index: 9999999999999999999999999999999999999999;
+  width: 260px;
+  height: 100px;
+height: auto;
+	bottom: 0px;
+	left: -45px;
+right: 0px;
+/*border-radius: 5px;*/
+position: absolute;
+
+}
+
+#remoteVideo {
+  z-index: 9999999999999999999999999999999999999999;
+  width: 150%;
+	height: 100%;
+	margin-top: 40px;
+	left: 0px;
+	margin-right: -30px;
+}
+
+
+	.unitygif {
+	position: absolute;
+    display: flex;
+    left: 20%;
+    height: 100vh;
+}
+
+.gambar-animasi {
+    width: 500px; /* Sesuaikan dengan ukuran gambar Anda */
+    height: 500px;
+    animation: animasi-gambar 2s ease-in-out infinite alternate;
+    z-index: 9999;
+    margin-top: 200px;
+    position: absolute;
+
+}
+
+@keyframes animasi-gambar {
+    0% {
+        transform: scale(1);
+    }
+    100% {
+        transform: scale(1.2);
+    }
+}
+
+}
+

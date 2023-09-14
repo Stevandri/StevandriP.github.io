@@ -1,0 +1,618 @@
+
+body{
+    width: 100%;
+    height: 100%;
+
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+
+/*Header*/
+    .top1 {
+		width: 100%;
+		height: 8%;
+		background: #091C36;
+		position: absolute;
+		top: 0;
+		left: 0;
+		right: 0;
+		border-bottom: 2px solid white;
+		z-index: 400;
+		position: fixed;
+	}
+
+    .halo {
+        color: #FFF;
+        font-family: Arial;
+        font-size: 100%;
+        font-style: normal;
+        font-weight: ;
+        line-height: normal;
+        margin-left: 20px;
+        margin-top: 16px;
+    }
+
+    .logounity {
+        width: 150px;
+        height: auto;
+        position: absolute;
+        top: 0%;
+        right: 1%;
+	}
+
+
+/*ini bagian gambar 4 buah*/
+    .lapisan {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        height: 417px;
+        background: white;
+    }
+
+    .item {
+        position: relative;
+        flex: calc(100vw/6) 1 1;
+        background-size: cover;
+        overflow: hidden;
+        filter: saturate(90%);
+        transition: 1s;
+    }
+
+    .item:before {
+        content: "";
+        position: absolute;
+        inset: 0;
+    }
+
+    .item:not(:last-child) {
+        border-bottom: 1px solid #ccc;
+        animation: borderPulse 5s infinite;
+    }
+
+    .item:hover {
+        flex-basis: 40%;
+        filter: saturate(120%);
+    }
+
+    .item:nth-child(1) {
+        background-image: url("Unsrat.png");
+        background-position: 72% 35%;
+    }
+
+    .item:nth-child(2) {
+        background-image: url("unimeet.png");
+        background-position: 60% 8%;
+    }
+
+    .item:nth-child(3) {
+        background-image: url("cloud.png");
+        background-position: 57% 8%;
+    }
+
+    .item:nth-child(4) {
+        background-image: url("group.png");
+        background-position: 45% 8%;
+    }
+
+    .kutipan {
+        opacity: 1;
+        transform: translateX(49%);
+        color: white;
+        position: absolute;
+        z-index: 250;
+        font-family: arial;
+        margin-bottom: 10%;
+        filter: drop-shadow(10px 20px 20px rgba(0, 0, 0, 10));
+    }
+
+    span {
+        position: absolute;
+        bottom: -1%;
+        right: 0;
+        text-align: right;
+        font-weight: bold;
+        transform: translate(4rem, 100%);
+    filter: drop-shadow(10px 10px 20px rgba(0, 0, 0, 10));
+    font-size: 97%;
+}
+.nameS{
+    margin-bottom: 40px;
+}
+.nameB{
+    margin-bottom: -18px;
+}
+.stev {
+    margin-bottom: 20px;
+    font-size: 15px;
+}
+.blessy{
+    margin-bottom: -35px;
+    font-size: 15px;
+}
+
+
+
+
+
+
+
+
+
+
+@media (min-width: 1024px) {
+    .lapisan {
+        flex-direction: row;
+    }
+
+    .item:not(:last-child) {
+        border-right: 1px solid #ccc;
+        border-bottom: none;
+    }
+
+    .item:hover {
+        flex-basis: 75%;
+    }
+
+    .kutipan {
+        left: 15%;
+        bottom: 35%;
+        width: 30vw;
+    }
+
+    @keyframes borderPulse {
+        0%, 100% {
+            border-color: rgba(204, 204, 204, 1);
+        }
+        25%, 75% {
+            border-color: rgba(204, 204, 204, 0.9);
+        }
+        50% {
+            border-color: rgba(204, 204, 255, 0.5);
+        }
+    }
+}
+
+
+
+
+
+.wave {
+	position: absolute;
+	margin-top: -13%;
+	width: 100%;
+}
+
+.wave1 {
+    position: absolute;
+    margin-top: -14%;
+    width: 100%;
+}
+
+
+.wadah{
+	height: 100px;
+	width: 100%;
+	position: absolute;
+	
+
+}
+.circle {
+    width: 206px;
+height: 202px;
+    border-radius: 50%; 
+    align-content: center;
+    margin-left: 42%;
+   
+    filter: drop-shadow(6px 9px 10px rgba(0, 0, 0, 0.25));
+    background: linear-gradient(232deg, #A4A3A2 0%, rgba(44, 44, 44, 0.73) 79.71%, rgba(21, 21, 21, 0.00) 96.07%);
+ background-color: #A4A2A2;
+ position: absolute;
+ margin-top: -130px;
+ transition: transform 0.3s ease;
+ z-index: 100;
+ ;
+}
+.circle:hover {
+    transform: scale(1.12);}
+
+.vc{
+	background-image: url("VC.png");
+	position: absolute;
+	height: 90px;
+	width: 100px;
+	background-repeat: no-repeat;
+	margin-left: 67px;
+	margin-top: 30%;
+}
+
+.circle1 {
+	 width: 119px;
+height: 114px;
+    border-radius: 50%; 
+    align-content: center;
+    margin-left: 32%;
+     filter: drop-shadow(6px 9px 10px rgba(0, 0, 0, 0.25));
+    background: linear-gradient(232deg, #A4A3A2 0%, rgba(44, 44, 44, 0.73) 79.71%, rgba(21, 21, 21, 0.00) 96.07%);
+ background-color: #A4A2A2;
+ position: absolute;
+ margin-top: -50px;
+ transition: transform 0.3s ease;
+}
+.circle1:hover {
+    transform: scale(1.12);}
+
+.facebook{
+	background-image: url("Facebook.png");
+	position: absolute;
+	height: 87px;
+	width: 100px;
+	background-repeat: no-repeat;
+	margin-left: 22px;
+	margin-top: 18%;}
+
+.circle2 {
+	 width: 119px;
+height: 114px;
+    border-radius: 50%; 
+    align-content: center;
+    margin-left: 58.5%;
+     filter: drop-shadow(6px 9px 10px rgba(0, 0, 0, 0.25));
+    background: linear-gradient(232deg, #A4A3A2 0%, rgba(44, 44, 44, 0.73) 79.71%, rgba(21, 21, 21, 0.00) 96.07%);
+ background-color: #A4A2A2;
+ position: absolute;
+ margin-top: -50px;
+transition: transform 0.3s ease; }
+
+.circle2:hover {
+    transform: scale(1.12);
+}
+ .ig{
+	background-image: url("Instagram.png");
+	position: absolute;
+	height: 87px;
+	width: 100px;
+	background-repeat: no-repeat;
+	margin-left: 27px;
+	margin-top: 18%;}
+
+
+.kenali{
+	color: #000;
+font-family: Arial;
+font-size: 30px;
+font-style: normal;
+font-weight: 700;
+line-height: normal;
+position: absolute;
+width: 100%;
+background-color: pink;
+display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: lightgray;
+    top: 600px;
+}
+
+/*ini untuk slide*/
+.isi {
+    width: 100%; /* Menggunakan persentase agar bisa responsif */
+    overflow: hidden; /* Menyembunyikan overflow horizontal */
+    position: relative;
+    margin-top: 250px;
+    margin-bottom: 6px;
+  }
+
+  .korsel {
+    display: flex; /* Menggunakan flex container */
+    gap: 1.2rem;
+    overflow-x: auto; /* Mengatur overflow horizontal */
+    scroll-snap-type: x mandatory;
+  }
+
+  .card {
+    scroll-snap-align: start;
+    border-radius: 30px;
+    min-height: 200px;
+    min-width: 550px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0; /* Agar kartu tidak terlalu mengumpul saat diperkecil */
+  }
+
+  .card:nth-child(1){
+    background-image: url("kami.png");
+  }
+
+  .card:nth-child(2) {
+    background-image: url("lomban.png");
+  }
+   .card:nth-child(3) {
+   background-image: url("zoom.jpg")}
+
+    .card:nth-child(4) {
+   background-image: url("skrensut.png")}
+
+
+   .footer{
+    background-color: #091C36;
+    position: absolute;
+    width: 100%;
+    height: 80px;
+    margin-bottom: 0px;
+   }
+
+   .fb{
+    color: #FFF;
+font-family: Arial;
+font-size: 20px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+margin-left: 40%;
+margin-top: 20px;
+   }
+  
+
+.ig2{
+     color: white;
+font-family: Arial;
+font-size: 20px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+margin-left: 55%;
+margin-top: -23px;
+}
+
+
+   a {
+    color: white; /* Warna tautan normal */
+    text-decoration: none; /* Hilangkan garis bawah tautan */
+  }
+
+  /* Tautan yang sudah dikunjungi */
+  a:visited {
+    color: white; /* Warna tautan setelah dikunjungi */
+  }
+
+
+
+
+
+
+
+
+@media (max-width: 1180px) {
+
+
+.lapisan {
+    margin-top: 53px;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 417px;
+    background: white;
+}
+
+.item {
+    position: relative;
+    flex: calc(100vw/6) 1 1;
+    background-size: cover;
+    overflow: hidden;
+    filter: saturate(90%);
+    transition: 1s;
+}
+
+.item:before {
+    content: "";
+    position: absolute;
+    inset: 0;
+}
+
+.item:not(:last-child) {
+    border-bottom: 1px solid #ccc;
+    animation: borderPulse 5s infinite;
+}
+
+.item:hover {
+    flex-basis: 40%;
+    filter: saturate(120%);
+}
+
+
+
+.item:nth-child(1) {
+    background-image: url("Unsrat.png");
+    background-position: 72% 35%;
+    opacity: 0.9;
+}
+
+.item:nth-child(2) {
+    background-image: url("unimeet.png");
+    background-position: 60% 8%;
+    opacity: 0.9;
+}
+
+.item:nth-child(3) {
+    background-image: url("cloud.png");
+    background-position: 57% 8%;
+    opacity: 0.9;
+}
+
+.item:nth-child(4) {
+    background-image: url("group.png");
+    background-position: 45% 8%;
+    opacity: 0.9;
+}
+
+.kutipan {
+    opacity: 1;
+    transform: translateX(49%);
+    color: white;
+    position: absolute;
+    z-index: 250;
+    font-family: arial;
+    margin-bottom: 10%;
+    filter: drop-shadow(10px 20px 20px rgba(0, 0, 0, 10));
+}
+
+span {
+    display: inline-block;
+    width: 200px; 
+    height: 100px; 
+    padding: 10px; 
+    box-sizing: border-box; /* Memastikan padding tidak mempengaruhi lebar dan tinggi total */
+    position: absolute;
+    bottom: 2%;
+    right: 0;
+    text-align: right;
+    font-weight: bold;
+    transform: translate(4rem, 100%);
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 1);
+    font-size: 10px;
+    text-align: right;   
+}
+
+
+.span1{
+    bottom: -73px;
+    left: 50px;
+    }
+
+.span2{
+    bottom: -74px;
+    left: 57px;
+    }
+.span3{
+    bottom: -74px;
+    left: 40px;
+    }
+
+
+.nameS{
+    bottom: -74px;
+    left: 50px;
+    }
+
+.nameB{
+    bottom: -74px;
+    left: 50px;
+    }
+
+.stev {
+    bottom: -74px;
+    left: 50px;
+    font-size: 15px;
+}
+
+.blessy{
+    bottom: -74px;
+    left: 50px;
+    font-size: 15px;
+}
+.vc{
+    background-image: url("VC.png");
+    position: absolute;
+     background-size: contain;
+    height: 70px;
+    width: 90px;
+    background-repeat: no-repeat;
+    margin-left: 27%;
+    margin-top: 20%;
+}
+.circle {
+    width: 119px;
+    height: 114px;
+    border-radius: 50%; 
+    align-content: center;
+    margin-left: 35%;
+    filter: drop-shadow(6px 9px 10px rgba(0, 0, 0, 0.25));
+    background: linear-gradient(232deg, #A4A3A2 0%, rgba(44, 44, 44, 0.73) 79.71%, rgba(21, 21, 21, 0.00) 96.07%);
+    background-color: #A4A2A2;
+    position: absolute;
+    margin-top: -100px;
+    transition: transform 0.3s ease;
+    z-index: 100;
+}
+
+.circle:hover {
+    transform: scale(1.12);}
+
+
+.circle1 {
+     width: 70px;
+    height: 70px;
+    border-radius: 50%; 
+    margin-left: 18%;
+     filter: drop-shadow(6px 9px 10px rgba(0, 0, 0, 0.25));
+    background: linear-gradient(232deg, #A4A3A2 0%, rgba(44, 44, 44, 0.73) 79.71%, rgba(21, 21, 21, 0.00) 96.07%);
+ background-color: #A4A2A2;
+ position: absolute;
+ margin-top: -50px;
+ transition: transform 0.3s ease;
+}
+.circle1:hover {
+    transform: scale(1.12);}
+
+.facebook{
+    background-image: url("Facebook.png");
+    position: absolute;
+    background-size: contain;
+    height: 50px;
+    width: 100px;
+    background-repeat: no-repeat;
+    margin-left: 15%;
+    margin-top: 15%;}
+
+.circle2 {
+     width: 70px;
+    height: 70px;
+    border-radius: 50%; 
+    align-content: center;
+    margin-left: 65%;
+     filter: drop-shadow(6px 9px 10px rgba(0, 0, 0, 0.25));
+    background: linear-gradient(232deg, #A4A3A2 0%, rgba(44, 44, 44, 0.73) 79.71%, rgba(21, 21, 21, 0.00) 96.07%);
+    background-color: #A4A2A2;
+    position: absolute;
+    margin-top: -50px;
+    transition: transform 0.3s ease; }
+
+.circle2:hover {
+    transform: scale(1.12);
+}
+ .ig{
+    background-image: url("Instagram.png");
+    position: absolute;
+    background-size: contain;
+    height: 50px;
+    width: 100px;
+    background-repeat: no-repeat;
+    margin-left: 18%;
+    margin-top: 16%;}
+
+ .footer{
+    background-color: #091C36;
+    position: absolute;
+    width: 100%;
+    height: 60px;
+    margin-bottom: 0px;
+   }
+.isi {
+    width: 100%; /* Menggunakan persentase agar bisa responsif */
+    overflow: hidden; /* Menyembunyikan overflow horizontal */
+    position: relative;
+    margin-top: 200px;
+
+
+/*final media@ max667*/
+}
+
+
+
