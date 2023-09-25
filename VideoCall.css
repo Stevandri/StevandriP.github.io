@@ -1,23 +1,30 @@
 
 body{
-    width: 100%;
-    height: 100%;
-    background-color: black;
-    background-repeat: no-repeat;
+  width: 100%;
+  height: 100%;
+  background-color: black;
+  background-repeat: no-repeat;
+  margin: 0; 
+  overflow-x: hidden; 
+}
+
+.container {
+  max-width: 1180px;
+  margin: 0 auto; /* Pusatkan container */
+  padding: 0 20px; /* Tambahkan padding di sisi kanan dan kiri untuk ruang pernafasan */
 }
 
 .top1 {
-			width: 100%;
-			height: 10%;
-			background: #091C36;
-			position: absolute;
-			top: 0;
-			left: 0;
-			right: 0;
-			border-bottom: 2px solid white;
-			z-index: 400000000;
-			position: fixed;
-		}
+  width: 100%;
+  height: 10%;
+  background: #091C36;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  border-bottom: 2px solid white;
+  z-index: 400000000;
+}
 
 		.halo {
 	color: #FFF;
@@ -41,7 +48,7 @@ margin-top: 16px;
 
 
 .infoshare{
-	margin-top: 0%;
+	margin-top: 0.5%;
 	width: 652px;
 height: 44px;
 flex-shrink: 0;
@@ -84,13 +91,13 @@ border-radius: 5px;
 	z-index: 999999999999999;
 	width: 140px;
 	height: 44px;
-	margin-top: 0px;
+	margin-top: 0.5%;
 	right: 270px;
 	border-radius: 81px;
 	border: none; /* Added */
   outline: none; /* Added */
 	background: skyblue;
-/*filter: drop-shadow(10px 20px 20px rgba(0, 0, 0, 10));*/
+filter: drop-shadow(10px 20px 20px rgba(0, 0, 0, 10));
 	font-family: arial;
  display: flex;
  align-items: center;
@@ -170,20 +177,9 @@ margin-top: -25px;
   }
 
 
-.video-container {
-  z-index: 9999;
-  justify-content: space-between;
-  display: flex;
-  position:absolute;
-  height: 100%;
-  width: 100%;
-  left: 0;
-  right: 0;
-}
-
 
 #localVideo {
-z-index: 2;
+z-index: 22;
   width: 300px;
 height: 200px;
 flex-shrink: 0;
@@ -195,13 +191,13 @@ border-radius: 10px;
 }
 
 #remoteVideo {
-  z-index: 1;
+  z-index: 11;
   width: 100%;
-	height: 90%;
+	height: 100%;
 	flex-shrink: 0;
 	position: absolute;
 	margin-top: 40px;
-	margin-left: 0%;
+	margin-left: -5%;
 	 /* width: 400px;
 	height: 295px;
 	margin-top: 180px;
@@ -218,7 +214,7 @@ border-radius: 10px;
     width: 500px; /* Sesuaikan dengan ukuran gambar Anda */
     height: 500px;
     animation: animasi-gambar 2s ease-in-out infinite alternate;
-    z-index: 9999;
+    z-index: 11;
     margin-top: 70px;
     position: absolute;
 }
@@ -235,14 +231,24 @@ border-radius: 10px;
 
 
 @media (max-width: 1180px) {
+
+    body{
+        width: 100%;
+        height: 100%;
+        background-color: black;
+        background-repeat: no-repeat;
+        margin: 0; 
+        overflow-x: hidden; 
+}
+
+    .container{
+        padding : 0 10px;
+        
+    }
+
+
 	.top1 {
-			width: 100%;
-			height: 8%;
-			background: #091C36;
-			position: absolute;
-			top: 0;
-			left: 0;
-			right: 0;
+			height: 7%;
 			border-bottom: 1% solid white;
 			z-index: 400000000;
 			position: fixed;
@@ -253,7 +259,7 @@ border-radius: 10px;
 		}
 
 .logounity {
-		width: 170px;
+		width: 25%;
     height: auto;
     position: absolute;
     top: 8px;
@@ -262,9 +268,9 @@ border-radius: 10px;
 
 
 .infoshare{
-	margin-top: 1%;
+	margin-top: 2%;
 	width: 50%;
-height: 4.5%;
+height: 4%;
 flex-shrink: 0;
 border-radius: 81px;
 background: #D9D9D9;
@@ -272,7 +278,7 @@ position: absolute;
 margin-left: 0%;
 /*filter: drop-shadow(10px 20px 20px rgba(0, 0, 0, 10));*/
 font-family: arial;
-font-size: 75%;
+font-size: 50%;
  display: flex;
     align-items: center;
     justify-content: center;
@@ -284,9 +290,9 @@ font-size: 75%;
 	position: fixed;
 	z-index: 999999999999999;
 	width: 10%;
-	height: 4.5%;
-	margin-top: 1%;
-	right: 37%;
+	height: 4%;
+	margin-top: 2%;
+	left: 55%;
 	border-radius: 81px;
 	border: none; /* Added */
   outline: none; /* Added */
@@ -297,6 +303,7 @@ font-size: 75%;
  align-items: center;
  justify-content: center;
  cursor: pointer;
+ font-size: 50%;
 }
 
 
@@ -311,10 +318,10 @@ font-size: 75%;
 	width: 30%;
 height: 10%;
 flex-shrink: 0;
-border-radius: 32px;
+border-radius: 40px;
 background: #C30101;
 position: absolute;
-left: 65%;
+left: 35%;
 background-color: red;
 background-image: url("reject.png");
 background-repeat: no-repeat;
@@ -322,7 +329,7 @@ background-position: center;
 filter: drop-shadow(6px 9px 10px rgba(0, 0, 0, 0.25));
 z-index: 10000000000;
 cursor: pointer;
-margin-top: 67%;
+margin-top: 40%;
 }
 
 .akhiri:hover{
@@ -332,22 +339,24 @@ margin-top: 67%;
 
 .footer{
     background-color: #091C36;
-    width: 150%;
-    height: 10%;
+    width: 100%;
+    height: 5%;
 		overflow: hidden;
 			margin-bottom: -20%;
 			right: 0;
    }
 
+
    .ffb{
     color: #FFF;
 font-family: Arial;
-font-size: 20px;
+font-size: 15px;
 font-style: normal;
-font-weight: 400;
+font-weight: 400px;
 line-height: normal;
-margin-left: 35%;
-margin-top: 4%;
+margin-left: 25%;
+margin-top: 2%;
+bottom: 0;
 transition: color 0.3s;
    }
    .ffb:hover {
@@ -357,12 +366,12 @@ transition: color 0.3s;
    .fig{
      ccolor: white;
 font-family: Arial;
-font-size: 20px;
+font-size: 15px;
 font-style: normal;
 font-weight: 400;
 line-height: normal;
 margin-left: 60%;
-margin-top: -23px;
+margin-top: -17px;
 }
 
 
@@ -378,45 +387,46 @@ margin-top: -23px;
 
 
 
+#remoteVideo {
+  z-index: 11;
+  width: 110%;
+	height: 100%;
+	margin-top: 0px;
+	left: 0px;
+	margin-right: -30px;
+    position: absolute;
+}
+
 
 #localVideo {
-  z-index: 9999999999999999999999999999999999999999;
-  width: 260px;
-  height: 100px;
-height: auto;
-	bottom: 0px;
-	left: -45px;
+  z-index: 111;
+  width: 150px;
+  height: 200px;
+	bottom: 20%;
 right: 0px;
 /*border-radius: 5px;*/
 position: absolute;
-
 }
 
-#remoteVideo {
-  z-index: 9999999999999999999999999999999999999999;
-  width: 150%;
-	height: 100%;
-	margin-top: 40px;
-	left: 0px;
-	margin-right: -30px;
-}
 
 
 	.unitygif {
 	position: absolute;
     display: flex;
-    left: 20%;
-    height: 100vh;
+    height: 50%;
+    position: absolute;
+    left: -8px;
+    z-index: 5;
 }
 
 .gambar-animasi {
-    width: 500px; /* Sesuaikan dengan ukuran gambar Anda */
-    height: 500px;
+    width: 340px; /* Sesuaikan dengan ukuran gambar Anda */
+    height: 340px;
     animation: animasi-gambar 2s ease-in-out infinite alternate;
     z-index: 9999;
     margin-top: 200px;
     position: absolute;
-
+    overflow-x: hidden;
 }
 
 @keyframes animasi-gambar {
