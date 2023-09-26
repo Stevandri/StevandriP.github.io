@@ -206,16 +206,16 @@ border-radius: 10px;
 .unitygif {
 	position: absolute;
     display: flex;
-    left: 33%;
+    left: 40%;
     height: 100vh;
 }
 
 .gambar-animasi {
-    width: 500px; /* Sesuaikan dengan ukuran gambar Anda */
-    height: 500px;
+    width: 300px; /* Sesuaikan dengan ukuran gambar Anda */
+    height: 300px;
     animation: animasi-gambar 2s ease-in-out infinite alternate;
     z-index: 11;
-    margin-top: 70px;
+    margin-top: 150px;
     position: absolute;
 }
 
